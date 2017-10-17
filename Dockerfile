@@ -107,6 +107,6 @@ RUN wget http://artifactory.calenglab.spirentcom.com:8081/artifactory/generic-lo
     chmod a+x /etc/rc.d/rc.local
 
 RUN yum -y install sudo && \
-    echo "thot ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+    echo "thot ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
     yum clean all
                                                              
